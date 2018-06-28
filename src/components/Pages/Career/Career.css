@@ -1,0 +1,202 @@
+/* Relative variables */
+/* Raden */
+/* Umbrella */
+/* Fonts */
+/* Colors */
+.hero-career__content {
+  position: relative; }
+
+.hero-career__inner {
+  padding: 8.41667rem 0 2.66667rem;
+  position: relative;
+  z-index: 1;
+  max-width: 538px; }
+
+.hero-career__title {
+  font-family: "DINPro-Regular", sans-serif;
+  font-size: 1.58333rem;
+  line-height: 1.23;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #ec6531;
+  margin-bottom: 1.125rem; }
+
+.hero-career__text {
+  font-family: "DINPro-Medium", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #ffffff; }
+
+.hero-career__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background-image: url(/img/shutterstock_40681102_bearbeitet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.career-area__content {
+  position: relative;
+  z-index: 1;
+  padding: 3.25rem 0 4.41667rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%; }
+
+.career-area__background {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%; }
+
+.career-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .career-group .slide-up, .career-group .slide-down {
+    max-height: 0;
+    overflow-y: hidden;
+    -webkit-transition: max-height 0.3s ease-in-out;
+    -moz-transition: max-height 0.3s ease-in-out;
+    -o-transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.5s ease-in-out; }
+  .career-group .slide-down {
+    max-height: 100em; }
+
+.career-left-title-block {
+  width: 250px;
+  margin-right: 80px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
+
+.career-group-title {
+  font-family: "DINPro-Bold", sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: #ec6531;
+  letter-spacing: 2.8px;
+  text-transform: uppercase; }
+
+.career-ul-list {
+  padding-top: 60px;
+  max-width: 530px; }
+
+.career-li-list {
+  position: relative;
+  display: block;
+  margin-bottom: 1.25rem;
+  padding-left: 40px; }
+  .career-li-list.active .career-plus-icon {
+    transform: rotate(45deg); }
+
+.career-title {
+  font-size: 0.75rem;
+  margin-top: 0;
+  color: #575757;
+  font-weight: 400;
+  letter-spacing: 0.4px; }
+
+.career-plus-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.4s ease; }
+
+.career-description-paragraph {
+  max-height: 0;
+  overflow-y: hidden;
+  margin-top: 15px;
+  margin-bottom: 0;
+  opacity: 1;
+  -webkit-transition: height 300ms ease;
+  transition: height 300ms ease;
+  color: #575757;
+  font-size: 0.66667rem;
+  line-height: 1.35;
+  letter-spacing: 0.4px; }
+
+.career-link {
+  display: block;
+  width: 100%;
+  text-decoration: none; }
+
+.career_area__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DINPro-Medium", sans-serif;
+  font-size: 0.91667rem;
+  line-height: 27px;
+  letter-spacing: 3.3px;
+  color: #ffffff;
+  text-decoration: none;
+  position: absolute;
+  z-index: 1;
+  right: -10%;
+  bottom: -65px;
+  max-width: 470px;
+  width: 100%;
+  min-height: 130px;
+  background-color: #ec6531;
+  transition: background-color 300ms ease; }
+  .career_area__btn:hover {
+    background-color: #d15c2f; }
+  .career_area__btn span {
+    background-image: url(/img/Pfeil_XL.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 32px;
+    padding-right: 5.41667rem;
+    padding-bottom: 55px;
+    color: #fff; }
+
+@media (max-width: 1024px) {
+  .career-group {
+    flex-wrap: wrap;
+    width: 100%; }
+  .career-ul-list {
+    padding: 2.5rem 10% 0; }
+  .career_area__btn {
+    max-width: 352px;
+    min-height: 94px;
+    bottom: -40px; }
+    .career_area__btn span {
+      background-position: 100% 24px;
+      padding-right: 52px;
+      padding-bottom: 39px; } }
+
+@media (max-width: 767px) {
+  .hero-career__inner {
+    max-width: 360px; } }
+
+@media (max-width: 480px) {
+  .career-area__background {
+    width: 100%; }
+  .career-area__content {
+    width: 100%; }
+  .hero-career__inner {
+    max-width: 260px; }
+  .career-ul-list {
+    padding: 2.5rem 0 0; }
+  .career_area__btn {
+    max-width: 338px;
+    min-height: 89px;
+    right: 0; } }

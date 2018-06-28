@@ -1,0 +1,121 @@
+// SCSS variables
+
+/* Relative variables */
+
+$orange: #ec6531;
+$red: #bd1010;
+$lightRed: #FDA69E;
+$lightOrange: #FAE4DC;
+$dark: #4a4a4a;
+$darkGrey: #9d9d9d;
+$lightGrey: #dedfde;
+$white: #ffffff;
+$blue: #005266;
+
+
+/* Raden */
+$variableGroupColor1: $orange;
+$variableGroupColor2: $white;
+$variableGroupColor3: $darkGrey;
+$variableGroupColor4: $white;
+$variableGroupColor5: $orange;
+$variableGroupColor6: $blue;
+$variableGroupColor7: $lightOrange;
+
+/* Umbrella */
+//$variableGroupColor1: $red;
+//$variableGroupColor2: $dark;
+//$variableGroupColor3: $lightGrey;
+//$variableGroupColor4: $white;
+//$variableGroupColor5: $dark;
+//$variableGroupColor6: $red;
+//$variableGroupColor7: $lightRed;
+
+/* Fonts */
+$fontRegular: 'DINPro-Regular', sans-serif;
+$fontMedium: 'DINPro-Medium', sans-serif;
+$fontBold: 'DINPro-Bold', sans-serif;
+
+$fb: 24px;
+$fp: 16px;
+
+$titleFs: 44px;
+$titleLh: 48px;
+$titleLs:0.7px;
+
+$subtitleFs: 38px;
+$subtitleLh: 44px;
+$subtitleLs:0.6px;
+
+$accordionTitleFs: 18px;
+$accordionTitleLh: 20px;
+$accordionTitleLs: 0.4px;
+
+$sublineFs: 18px;
+$sublineLh: 26px;
+$sublineLs:0.9px;
+
+$headlineBigFs: 38px;
+$headlineBigLh: 44px;
+$headlineBigLs: 0.6px;
+
+$headlineSmallFs: 22px;
+$headlineSmallLh: 25px;
+$headlineSmallLs: 3.3px;
+
+$textlineFs: 16px;
+$textlineLh: 22px;
+$textlineLs: 0.4px;
+
+$btnArrowBigFs: 22px;
+$btnArrowBigLh: 25px;
+$btnArrowBigLs: 3.3px;
+
+$btnArrowSmallFs: 16px;
+$btnArrowSmallLh: 18px;
+$btnArrowSmallLs: 2.4px;
+
+
+/* Colors */
+
+$redColor: #e75325;
+$orangeColor: #ec6531;
+
+$blueColor1: #003c4e;
+$blueColor2: #00475a;
+$blueColor3: #005266;
+$blueColor4: #299bb2;
+$blueColor4: #299bb2;
+
+$darkColor1: #2d2d2d;
+$darkColor2: #575757;
+$darkColor3: #6f6f6f;
+$darkColor4: #9d9d9d;
+$darkColor5: #c7c7c6;
+
+$brownish-greyColor: #616161;
+$brownish-grey-twoColor: #6c6c6c;
+
+/// Strips the unit from a number.
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+// Convert pixels to rems
+// eg. for a relational value of 12px write rem(12)
+// Assumes $fb is the font-size of <html>
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  $base: $fb;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+@mixin rwd($px) {
+  $max-width: $px#{px};
+  @media screen and (max-width: $max-width) {@content}
+}

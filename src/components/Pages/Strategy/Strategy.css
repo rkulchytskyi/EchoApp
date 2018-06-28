@@ -1,0 +1,140 @@
+/* Relative variables */
+/* Raden */
+/* Umbrella */
+/* Fonts */
+/* Colors */
+.strategy__content {
+  position: relative; }
+
+.strategy__inner {
+  padding: 8.41667rem 0 2.66667rem;
+  position: relative;
+  z-index: 1;
+  max-width: 538px; }
+
+.strategy__title {
+  text-align: left;
+  margin-bottom: 1.125rem; }
+
+.strategy__text {
+  text-align: left; }
+
+.strategy-area__background-inner {
+  background-color: #e7e7e7;
+  position: relative;
+  height: 87%;
+  width: 60%; }
+
+.strategy__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background-image: url(/img/architecture-columnar-building-ornament-161277.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.strategy-area__content {
+  position: relative;
+  z-index: 1;
+  padding: 3.25rem 0 4.41667rem;
+  width: 79%; }
+
+.strategy-area__item img {
+  display: block; }
+
+.strategy-area__item.active .text-main {
+  position: relative;
+  right: 0; }
+
+.strategy-area__item.active .strategy-area__image {
+  visibility: visible;
+  opacity: 1; }
+
+.strategy-area__background {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  padding: 2.75rem 0 3.45833rem; }
+
+.strategy-area__item_inner {
+  display: flex;
+  flex-wrap: wrap; }
+
+.strategy-area__info {
+  overflow: hidden; }
+  .strategy-area__info .text-main {
+    position: relative;
+    right: -500px;
+    transition: all 0.4s ease; }
+
+.strategy-area__slide_inner {
+  width: 35%; }
+
+.strategy-area__slider {
+  display: flex;
+  flex-wrap: wrap; }
+  .strategy-area__slider .slick-slider {
+    height: 100%; }
+    .strategy-area__slider .slick-slider .slick-dots {
+      text-align: right; }
+      .strategy-area__slider .slick-slider .slick-dots li {
+        width: 15px; }
+        .strategy-area__slider .slick-slider .slick-dots li button:before {
+          width: 10px;
+          height: 10px; }
+
+.strategy-area__image_inner {
+  width: 65%; }
+
+.strategy-area__image {
+  transition: all 0.4s ease;
+  position: relative;
+  height: 0; }
+  .strategy-area__image:before {
+    content: '';
+    position: absolute;
+    background-color: #e7e7e7;
+    right: 12%;
+    width: 5500px;
+    height: 93%; }
+  .strategy-area__image .strategy-area__image-src {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease;
+    top: 15px; }
+    .strategy-area__image .strategy-area__image-src.fix-img2 {
+      margin-top: -75px; }
+    .strategy-area__image .strategy-area__image-src.fix-img3 {
+      margin-top: -75px; }
+  .strategy-area__image.active {
+    height: auto; }
+    .strategy-area__image.active .strategy-area__image-src {
+      height: auto;
+      visibility: visible;
+      opacity: 1; }
+
+@media (max-width: 768px) {
+  .strategy-area__image_inner {
+    width: 100%; }
+  .strategy-area__slide_inner {
+    width: 100%; }
+    .strategy-area__slide_inner .slick-list {
+      margin-bottom: 30px; }
+  .strategy-area__item_inner {
+    margin-top: 50px; } }
+
+@media (max-width: 767px) {
+  .strategy__inner {
+    max-width: 360px; } }
+
+@media (max-width: 480px) {
+  .strategy__inner {
+    max-width: 240px; } }

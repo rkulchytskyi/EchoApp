@@ -1,0 +1,47 @@
+.parallax-line{
+  .react-parallax{
+    position: absolute !important;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .react-parallax-background-children{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.parallax-block{
+  .react-parallax{
+    position: absolute !important;
+    overflow: visible !important;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+  .react-parallax-background-children{
+    top: 65%;
+    left: 65% !important;
+  }
+}
+
+@media (max-width: 991px){
+  .parallax-block{
+    .react-parallax{
+      top:400px;
+    }
+
+  }
+  .retail-view{
+    > .container{
+      margin-bottom: 300px;
+    }
+  }
+}
+

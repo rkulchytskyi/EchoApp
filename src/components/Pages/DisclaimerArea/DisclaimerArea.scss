@@ -1,0 +1,280 @@
+@import "../../../scss/_variables";
+
+.disclaimer-area{
+  position: relative;
+  background-position: 30px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom: 32px;
+  min-height: 100vh;
+
+  .main-menu{
+    max-width: 900px;
+    min-height: 600px;
+    width: 100%;
+  }
+
+  .footer-mini{
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+  }
+}
+
+.disclaimer-area__nav{
+  height: 130px;
+  background-color: #9d9d9d;
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  width: 90%;
+}
+
+.disclaimer-area__logo{
+  position: absolute;
+  top: 50px;
+  padding-left: 7%;
+}
+
+.disclaimer-area__inner{
+  position: relative;
+}
+
+.disclaimer-area__content{
+  max-width: 1180px;
+  width: 90%;
+}
+
+.disclaimer-area__item{
+  display: flex;
+  min-height: 600px;
+  flex-direction: column;
+  padding: 160px 7% 30px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+
+  &.cookies{
+    .checkbox-raden{
+      .ant-checkbox {
+        top: 0;
+      }
+    }
+  }
+
+  .checkbox-raden{
+    &.ant-checkbox-wrapper {
+      align-items: flex-start;
+    }
+    .ant-checkbox {
+      top: 4px;
+    }
+  }
+
+
+}
+
+.disclaimer-area__range{
+  top: 80px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+  position: absolute;
+
+  li{
+    font-size:18px;
+    text-transform: uppercase;
+    color: #c9c9c9;
+    position: relative;
+    display: inline-block;
+    padding-left: 40px;
+    letter-spacing: 4px;
+
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+    &:first-child{
+      padding-left: 0;
+    }
+    &.active{
+      color: #ffffff;
+      padding-bottom: 5px;
+      border-bottom: 3px solid $orangeColor;
+    }
+
+    span{
+      font-size: 28px;
+      padding-right: 15px;
+      font-weight: 500;
+    }
+  }
+}
+
+.disclaimer-area__title{
+  font-family: $fontMedium;
+  font-size:30px;
+  color: #393939;
+  text-transform: uppercase;
+  font-weight:500;
+  line-height: 34px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.disclaimer-area__tag{
+  color: $orangeColor;
+  font-size:18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.disclaimer-area__check{
+  .checkbox-raden{
+    &.ant-checkbox-wrapper {
+      align-items: flex-start;
+    }
+  }
+
+  input{
+    margin-right: 20px;
+  }
+}
+
+.disclaimer-area__btn-area{
+  display:-webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.disclaimer-area__btn{
+  color: $orangeColor;
+  font-weight:500;
+  font-size:22px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+
+  span{
+    width: 150px;
+    position: relative;
+    cursor: pointer;
+
+
+    &:before{
+      content: '';
+      position: absolute;
+      background-image: url(https://daks2k3a4ib2z.cloudfront.net/598ee498c327c10001ed9e40/598f02c090707d00013bf3b6_Underline.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      display: block;
+      height: 30px;
+      width: 150px;
+      top: 100%;
+      left: 0;
+    }
+  }
+
+}
+
+.disclaimer-area__btn-back {
+  color: #9d9d9d;
+  font-weight:500;
+  font-size:22px;
+  margin: 20px 30px 20px 0;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+
+  span{
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.disclaimer-area__type{
+  display: flex;
+  flex-wrap: wrap;
+  display:-webkit-flex;
+  flex-direction: column;
+  a{
+    font-size:18px;
+    max-width: 320px;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    margin: 10px 0;
+    text-align: center;
+    border: 2px solid #2d2d2d;
+
+    &.active{
+      border-color: $orangeColor;
+    }
+  }
+}
+
+.footer-mini{
+  height: 32px;
+  background-color: #2d2d2d;
+}
+@media (max-width: 1024px) {
+  .disclaimer-area__content {
+    width: 90%;
+  }
+  .disclaimer-area__nav{
+    width: 90%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .disclaimer-area__range {
+    li {
+      letter-spacing: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .disclaimer-area__content{
+    width: 100%;
+  }
+  .disclaimer-area__nav{
+    width: 100%;
+  }
+  .disclaimer-area__title{
+    display: none;
+  }
+  .disclaimer-area__range {
+    right: 15px;
+    li {
+      padding-left: 20px;
+
+      span{
+          font-size: 24px;
+          padding-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .disclaimer-area__type {
+    a {
+      font-size: 16px;
+    }
+  }
+  .disclaimer-area__item{
+    &.cookies{
+      .checkbox-raden{
+        .ant-checkbox {
+          top: 4px;
+        }
+      }
+    }
+  }
+}

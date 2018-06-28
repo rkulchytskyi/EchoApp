@@ -1,0 +1,144 @@
+@import "../../../scss/_variables";
+
+/* THE Transaction summary */
+.transaction-summary{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .product-name{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #005166;
+  }
+
+  .product-number{
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #464646;
+    text-transform: uppercase;
+  }
+
+  .product-value{
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #464646;
+
+    .product-value__bold{
+      font-family: $fontMedium;
+      font-size: 16px;
+    }
+  }
+
+  .product-date{
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #464646;
+  }
+}
+
+.transaction-summary__header {
+  font-family: $fontMedium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #ffffff;
+  padding: rem(5) rem(15);
+  background-color: $darkColor4;
+  border-bottom: 1px solid #ffffff;
+  position: relative;
+
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    display: block;
+    max-width: 77px;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    display: block;
+    max-width: 77px;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+  }
+}
+
+.transaction-summary__body{
+  background-color: #d8d8d8;
+  padding: rem(5) rem(15);
+}
+
+.transaction-summary__content{
+  overflow-x: auto;
+  table {
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  thead{
+    tr{
+      th{
+        padding: 5px 20px 5px 0;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.54;
+        letter-spacing: 0.6px;
+        text-align: left;
+        color: #464646;
+      }
+    }
+  }
+
+  tbody{
+    tr{
+      border-bottom: 1px solid #ffffff;
+
+      &:last-child{
+        border-bottom: none;
+      }
+
+      td{
+        padding: 5px 20px 5px 0;
+      }
+    }
+  }
+}
+
+/* END Transaction summary */

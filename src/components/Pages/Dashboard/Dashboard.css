@@ -1,0 +1,194 @@
+/* Relative variables */
+/* Raden */
+/* Umbrella */
+/* Fonts */
+/* Colors */
+.dashboard .fixed {
+  position: fixed;
+  width: 100%;
+  top: -60px;
+  left: 0;
+  z-index: 2; }
+  .dashboard .fixed + .layout {
+    margin-top: 130px; }
+
+.dashboard.settings .investment-plan__content {
+  padding: 0;
+  position: relative; }
+
+.dashboard.settings .investment-plan__title {
+  font-size: 1.25rem;
+  cursor: pointer; }
+
+.dashboard.settings .settings-list {
+  position: relative;
+  display: block;
+  margin-bottom: 1.25rem; }
+  .dashboard.settings .settings-list .settings-plus-icon {
+    transition: all 0.4s ease; }
+  .dashboard.settings .settings-list.active .settings-plus-icon {
+    transform: rotate(45deg); }
+
+.dashboard.settings .investment-plan__btn span {
+  width: 168px; }
+  .dashboard.settings .investment-plan__btn span:before {
+    left: 108px; }
+
+.dashboard__content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  min-height: calc(100vh - 220px); }
+
+.dashboard__inner {
+  max-width: 80%;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  padding: 1.66667rem; }
+
+.dashboard__aside {
+  max-width: 20%;
+  width: 100%; }
+
+.dashboard__left_side {
+  width: 40%; }
+
+.dashboard__right_side {
+  width: 60%; }
+
+.dashboard__info_1 {
+  background-color: #005166;
+  padding: 20px 15px;
+  min-height: 600px;
+  margin-right: 1.66667rem; }
+
+.dashboard__info_2 {
+  background-color: #005166;
+  min-height: 300px;
+  margin-bottom: 1.66667rem; }
+
+/* THE Trades Info */
+.info-trades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff; }
+  .info-trades span {
+    font-size: 1rem; }
+
+/* END Trades Info */
+/* THE Dashboard slider */
+.dashboard-slider__header {
+  height: 155px;
+  background-color: #d8d8d8;
+  position: relative;
+  z-index: 1; }
+
+.dashboard-slider__body {
+  height: 100%;
+  min-height: calc(100vh - 344px);
+  background-color: #ffffff;
+  padding: 0 15px 50px 15px;
+  margin-top: -50px; }
+
+.dashboard-slider {
+  z-index: 1; }
+  .dashboard-slider .slick-dots {
+    bottom: inherit;
+    top: -40px;
+    z-index: 1; }
+    .dashboard-slider .slick-dots li button:before {
+      width: 8px;
+      height: 8px; }
+
+.dashboard-slider__titles {
+  padding-top: 25px; }
+  .dashboard-slider__titles:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    top: 0;
+    height: 155px;
+    pointer-events: none;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8d8d8+0,ffffff+100&1+0,0+100 */
+    background: -moz-linear-gradient(left, #d8d8d8 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #d8d8d8 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #d8d8d8 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#00ffffff',GradientType=1 );
+    /* IE6-9 */ }
+  .dashboard-slider__titles:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    top: 0;
+    height: 155px;
+    pointer-events: none;
+    right: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d8d8d8+100&0+0,1+100 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #d8d8d8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #d8d8d8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #d8d8d8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d8d8d8',GradientType=1 );
+    /* IE6-9 */ }
+
+.dashboard-slider__title {
+  font-size: 0.83333rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #ec6531;
+  margin: 0 20px; }
+  .dashboard-slider__title.slick-active {
+    color: #ffffff;
+    border-bottom: solid 2px #ec6531; }
+
+/* END Dashboard slider */
+@media (max-width: 1024px) {
+  .dashboard__inner {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .dashboard__info_2 {
+    width: 100%; }
+  .dashboard__info_1 {
+    width: 48%;
+    max-width: 100%;
+    margin-right: 0; }
+  .dashboard__info_3 {
+    width: 48%;
+    max-width: 100%; } }
+
+@media (max-width: 767px) {
+  .dashboard .fixed {
+    top: -28px; }
+    .dashboard .fixed + .layout {
+      margin-top: 98px; }
+  .dashboard.settings .dashboard__inner {
+    max-width: 100%; }
+  .dashboard.settings .investment-plan__btn-area {
+    justify-content: flex-end; }
+  .dashboard__content {
+    flex-direction: column; }
+  .dashboard__info_1 {
+    width: 100%; }
+  .dashboard__info_3 {
+    width: 100%; } }

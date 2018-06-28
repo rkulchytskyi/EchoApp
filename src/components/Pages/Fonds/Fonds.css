@@ -1,0 +1,150 @@
+/* Relative variables */
+/* Raden */
+/* Umbrella */
+/* Fonts */
+/* Colors */
+.hero-fonds__content {
+  position: relative; }
+
+.hero-fonds__inner {
+  padding: 8.41667rem 0 2.66667rem;
+  position: relative;
+  z-index: 1;
+  max-width: 538px; }
+
+.hero-fonds__title {
+  font-family: "DINPro-Regular", sans-serif;
+  font-size: 1.58333rem;
+  line-height: 1.23;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 1.125rem; }
+
+.hero-fonds__text {
+  font-family: "DINPro-Medium", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #ffffff; }
+
+.hero-fonds__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background-image: url(/img/HeroImage1.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.fonds-area__content {
+  position: relative;
+  z-index: 1;
+  padding: 3.25rem 0 4.41667rem;
+  display: flex;
+  flex-wrap: wrap; }
+
+.fonds-area__desc {
+  max-width: 415px;
+  margin-right: 3.75rem; }
+
+.fonds-area__background {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%; }
+
+.fonds-area__title {
+  font-family: "DINPro-Medium", sans-serif;
+  font-size: 0.91667rem;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 3.3px;
+  text-align: left;
+  color: #ec6531;
+  margin-bottom: 10px; }
+
+.fonds-area__info > div {
+  font-size: 0.79167rem;
+  font-weight: normal;
+  line-height: 1.32;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem; }
+
+.fonds-area__info p {
+  font-family: "DINPro-Medium", sans-serif;
+  font-size: 0.66667rem;
+  font-weight: 500;
+  line-height: 1.31;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #575757;
+  margin-bottom: 1.45833rem; }
+
+.fonds-area__chart_area {
+  width: 627px;
+  height: 414px;
+  background-color: #005166;
+  margin-top: 2.5rem;
+  margin-bottom: 1.54167rem; }
+
+.fonds-area__subtitle {
+  font-family: "DINPro-Medium", sans-serif;
+  font-size: 0.70833rem;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #2d2d2d;
+  margin-bottom: 1.04167rem; }
+
+.fonds-area__download_area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.16667rem; }
+
+.fonds-area__download_btn {
+  max-width: 186px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #2d2d2d;
+  text-decoration: none;
+  font-family: "DINPro-Medium", sans-serif;
+  font-size: 0.70833rem;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #2d2d2d;
+  margin-right: 23px;
+  padding: 0 15px; }
+
+.fonds-area__item {
+  font-size: 0.70833rem;
+  line-height: 1.24;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #2d2d2d; }
+
+.fonds-area__item_name {
+  padding-right: 3.125rem; }
+
+@media (max-width: 767px) {
+  .hero-fonds__inner {
+    max-width: 360px; }
+  .fonds-area__desc {
+    max-width: 360px; } }
+
+@media (max-width: 480px) {
+  .hero-fonds__inner {
+    max-width: 260px; }
+  .fonds-area__desc {
+    max-width: 260px; } }

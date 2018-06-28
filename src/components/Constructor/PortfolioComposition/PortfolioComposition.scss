@@ -1,0 +1,144 @@
+@import "../../../scss/_variables";
+
+/* THE Transaction summary */
+.portfolio-composition{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.portfolio-composition__header {
+  font-family: $fontMedium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #ffffff;
+  padding: rem(5) rem(15);
+  background-color: $darkColor4;
+  border-bottom: 1px solid #ffffff;
+  position: relative;
+
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    display: block;
+    max-width: 15%;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    display: block;
+    max-width: 15%;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+  }
+}
+
+.portfolio-composition__body{
+  background-color: #d8d8d8;
+  padding: rem(5) rem(15);
+}
+
+.portfolio-composition__content{
+  position: relative;
+  > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ffffff;
+
+    li{
+      display: flex;
+      padding: 10px 0;
+      border-bottom: 1px solid #d8d8d8;
+
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.portfolio-composition__product-name{
+  font-family: $fontMedium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.1px;
+  color: #005166;
+
+  span{
+    font-family: $fontRegular;
+    font-size: 13px;
+    color: #2d2d2d;
+  }
+}
+
+.portfolio-composition__product-number{
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: 0.6px;
+  color: #464646;
+}
+
+.portfolio-composition__product-percent{
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: 0.6px;
+  color: #464646;
+}
+
+.portfolio-composition__product-cost{
+  font-family: $fontMedium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.1px;
+  color: #2d2d2d;
+}
+
+.portfolio-composition__left-side{
+  width: 60%;
+  text-align: left;
+}
+.portfolio-composition__right-side{
+  width: 40%;
+  text-align: right;
+}
+
+.portfolio-composition__invest{
+  display: flex;
+  padding: 10px 0;
+  > ul{
+    width: 100%;
+    li{
+      display: flex;
+    }
+  }
+}
+
+/* END Transaction summary */

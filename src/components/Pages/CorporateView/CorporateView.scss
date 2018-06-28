@@ -1,0 +1,74 @@
+@import "../../../scss/_variables";
+
+.feature-corporate{
+  text-align: center;
+}
+.feature-corporate__title{
+  font-size:rem(22);
+  line-height:rem(33);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: rem(20);
+}
+.corporate-wrapper{
+  .features{
+    padding: rem(114) rem(100);
+  }
+}
+.feature-corporate__signature{
+  font-family:$fontMedium;
+  font-size:rem(17);
+  line-height:rem(25);
+  letter-spacing: 2.6px;
+  font-weight:500;
+  margin-bottom: rem(80);
+}
+.feature-corporate__text{
+
+}
+.parallax-box{
+  position: relative !important;
+  z-index: 3;
+  .safety-features{
+    top: 180px;
+  }
+}
+
+.parallax-bottom-line {
+  top: 0;
+  right: 0;
+}
+.corp-view{
+  > .container{
+    margin-bottom: 300px;
+  }
+}
+@media (max-width: 991px){
+  .parallax-block{
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    z-index: 12;
+  }
+  .corp-view > .container {
+    margin-bottom: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature-corporate__title {
+    font-size: 16px;
+  }
+  .corporate-wrapper {
+    .features {
+      padding: rem(30) rem(30);
+    }
+  }
+  .parallax-block {
+    position: absolute;
+    top: 35%;
+    left: 85%;
+    z-index: 12;
+  }
+}
+

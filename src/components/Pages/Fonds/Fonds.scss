@@ -1,0 +1,177 @@
+@import "../../../scss/_variables";
+
+.hero-fonds__content {
+  position: relative;
+}
+
+.hero-fonds__inner {
+  padding: rem(202) 0 rem(64);
+  position: relative;
+  z-index: 1;
+  max-width: 538px;
+}
+
+.hero-fonds__title {
+  font-family: $fontRegular;
+  font-size: rem(38);
+  line-height: 1.23;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: rem(27);
+}
+
+.hero-fonds__text {
+  font-family: $fontMedium;
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.hero-fonds__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background-image: url(/img/HeroImage1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fonds-area {
+
+}
+
+.fonds-area__content {
+  position: relative;
+  z-index: 1;
+  padding: rem(78) 0 rem(106);
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.fonds-area__desc {
+  max-width: 415px;
+  margin-right: rem(90);
+}
+
+.fonds-area__background {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+}
+
+.fonds-area__title {
+  font-family: $fontMedium;
+  font-size: rem(22);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 3.3px;
+  text-align: left;
+  color: $orangeColor;
+  margin-bottom: 10px;
+}
+
+.fonds-area__info {
+  > div {
+    font-size: rem(19);
+    font-weight: normal;
+    line-height: 1.32;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    margin-bottom: rem(30);
+  }
+  p {
+    font-family: $fontMedium;
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 1.31;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #575757;
+    margin-bottom: rem(35);
+  }
+}
+
+.fonds-area__chart_area {
+  width: 627px;
+  height: 414px;
+  background-color: #005166;
+  margin-top: rem(60);
+  margin-bottom: rem(37);
+}
+
+.fonds-area__subtitle {
+  font-family: $fontMedium;
+  font-size: rem(17);
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #2d2d2d;
+  margin-bottom: rem(25);
+}
+
+.fonds-area__download_area{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: rem(28);
+}
+
+.fonds-area__download_btn{
+  max-width: 186px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #2d2d2d;
+  text-decoration: none;
+  font-family: $fontMedium;
+  font-size: rem(17);
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #2d2d2d;
+  margin-right: 23px;
+  padding: 0 15px;
+}
+
+.fonds-area__item{
+  font-size: rem(17);
+  line-height: 1.24;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #2d2d2d;
+}
+
+.fonds-area__item_name{
+  padding-right: rem(75);
+}
+
+@media (max-width: 767px){
+  .hero-fonds__inner {
+    max-width: 360px;
+  }
+  .fonds-area__desc{
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 480px){
+  .hero-fonds__inner {
+    max-width: 260px;
+  }
+  .fonds-area__desc{
+    max-width: 260px;
+  }
+}
+

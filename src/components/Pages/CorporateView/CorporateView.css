@@ -1,0 +1,58 @@
+/* Relative variables */
+/* Raden */
+/* Umbrella */
+/* Fonts */
+/* Colors */
+.feature-corporate {
+  text-align: center; }
+
+.feature-corporate__title {
+  font-size: 0.91667rem;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0.83333rem; }
+
+.corporate-wrapper .features {
+  padding: 4.75rem 4.16667rem; }
+
+.feature-corporate__signature {
+  font-family: "DINPro-Medium", sans-serif;
+  font-size: 0.70833rem;
+  line-height: 1.04167rem;
+  letter-spacing: 2.6px;
+  font-weight: 500;
+  margin-bottom: 3.33333rem; }
+
+.parallax-box {
+  position: relative !important;
+  z-index: 3; }
+  .parallax-box .safety-features {
+    top: 180px; }
+
+.parallax-bottom-line {
+  top: 0;
+  right: 0; }
+
+.corp-view > .container {
+  margin-bottom: 300px; }
+
+@media (max-width: 991px) {
+  .parallax-block {
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    z-index: 12; }
+  .corp-view > .container {
+    margin-bottom: 300px; } }
+
+@media (max-width: 767px) {
+  .feature-corporate__title {
+    font-size: 16px; }
+  .corporate-wrapper .features {
+    padding: 1.25rem 1.25rem; }
+  .parallax-block {
+    position: absolute;
+    top: 35%;
+    left: 85%;
+    z-index: 12; } }

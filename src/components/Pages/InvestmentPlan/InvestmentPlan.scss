@@ -1,0 +1,1325 @@
+@import "../../../scss/_variables";
+
+.investment-plan{
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+
+  .ant-spin{
+    color: $orangeColor;
+    margin-top: 5px;
+  }
+}
+
+.investment-plan__header{
+  display: flex;
+  flex-wrap: wrap;
+
+  .user-area{
+    text-align: center;
+    width: 10%;
+    background-color: $variableGroupColor1;
+
+    .anticon{
+      margin-top: 62px;
+      font-size:32px;
+      color: #ffffff;
+    }
+  }
+}
+
+.investment-plan__nav{
+  height: 130px;
+  background-color: $darkColor4;
+  position: relative;
+  z-index: 1;
+  //max-width: 1180px;
+  width: 90%;
+}
+
+.investment-plan__inner{
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-top: 55px;
+  padding-right: 15px;
+}
+
+.investment-plan__progress{
+  position: relative;
+  top: -15px;
+
+  .ant-progress-inner{
+    background-color: transparent;
+  }
+  .ant-progress-bg{
+    background-color: $variableGroupColor1;
+    border-radius: 0;
+    height: 3px !important;
+  }
+}
+
+.investment-plan__range{
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+
+  li{
+    color: #c9c9c9;
+    font-size: rem(22);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-left: 34px;
+    text-transform: capitalize;
+
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+    &:first-child{
+      padding-left: 0;
+    }
+    &.active{
+      color: #ffffff;
+      padding-bottom: 3px;
+    }
+    span{
+      font-family:$fontBold;
+      font-size: rem(36);
+      padding-right: 15px;
+    }
+  }
+}
+
+.investment-plan__section {
+
+  width: 90%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  left: 0;
+  min-height: calc(100vh - 220px);
+  background-color: #ffffff;
+}
+
+.investment-plan__section_inner {
+  width: 100%;
+  position: relative;
+  max-width: 1180px;
+}
+
+.investment-plan__content{
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  padding: rem(76) rem(76) rem(42) rem(110);
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li{
+      margin-bottom: rem(30);
+    }
+
+  }
+
+  .spin-active{
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ant-spin-dot {
+      i{
+        background-color: $variableGroupColor1;
+        border-radius: 0;
+      }
+    }
+  }
+
+}
+
+.investment-plan__title{
+  font-size: rem(38);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.26;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: $variableGroupColor1;
+  margin-bottom: 7px;
+}
+
+.investment-plan__subline{
+  font-size: rem(18);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: 0.9px;
+  text-align: left;
+  margin-bottom: rem(30);
+}
+
+.investment-plan__subtitle{
+  font-family:$fontMedium;
+  font-size: rem(18);
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #464646;
+  margin-bottom: 10px;
+  display: flex;
+
+}
+
+.investment-plan__client-type{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: rem(40) 0;
+
+  .client-type-btn{
+    font-family:$fontRegular;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: 0.4px;
+    text-align: center;
+    min-width: 177px;
+    margin-right: 18px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $darkColor2;
+    cursor: pointer;
+
+    &.active{
+      border: 2px solid $orangeColor;
+      color: $orangeColor;
+    }
+  }
+}
+
+.investment-plan__error{
+  margin-top: 40px;
+  max-width: 454px;
+  padding: 10px;
+  background-color: $variableGroupColor1;
+  color: #ffffff;
+}
+
+.response-message{
+  max-width: 400px;
+  color: $variableGroupColor1;
+}
+
+.investment-plan__notice{
+  font-size:12px;
+  margin-top: 5px;
+  line-height:16px;
+}
+
+.invalid-error{
+  font-size:12px;
+  color: red;
+  margin-top: 5px;
+}
+
+.investment-plan__group{
+  display: flex;
+  flex-wrap: wrap;
+
+  .ip-btn{
+    font-family:$fontRegular;
+    height: 37px;
+    border: 2px solid $darkColor2;
+    background-color: transparent;
+    padding: 0 15px;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    max-width: 177px;
+    transition: all .3s;
+
+    &:hover {
+      border-color: $variableGroupColor1;
+    }
+    &.active{
+      border-color: $variableGroupColor1;
+      color: $variableGroupColor1;
+    }
+  }
+}
+
+.investment-plan__order{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.investment-plan__order_item{
+  width: 28%;
+  margin-bottom: 25px;
+}
+
+.investment-plan__order_title{
+  font-family:$fontMedium;
+  color: $variableGroupColor1;
+  font-size: rem(20);
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.95;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 21px;
+
+  span{
+    font-family:$fontBold;
+    font-size:rem(48);
+    padding-right: 10px;
+  }
+}
+
+.investment-plan__order_text{
+  text-align: center;
+}
+
+.investment-plan__sms-info{
+  max-width: 604px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: 0.4px;
+  text-align: left;
+
+  margin-top: rem(60);
+  margin-bottom: rem(36);
+}
+
+.investment-plan__order_icon{
+  margin-bottom: 15px;
+  img{
+    max-height: 157px;
+  }
+}
+
+/* THE Popover */
+.ip-info{
+  margin-left: 15px;
+  .ant-btn{
+    border:0 ;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-color: $variableGroupColor1;
+  }
+  .ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active {
+    background: $variableGroupColor1;
+    color: #ffffff;
+  }
+}
+
+.ip-popover__content{
+  max-width: 390px;
+}
+.ip-popover{
+  &.ant-popover{
+    padding-top: 0 !important;
+    font-family:$fontRegular !important;
+
+    .ant-popover-arrow{
+      display: none;
+    }
+
+    .ant-popover-inner{
+      border-radius: 0;
+      box-shadow: none;
+      background-color: $variableGroupColor1;
+    }
+    .ant-popover-inner-content{
+      color: #ffffff;
+    }
+  }
+}
+
+
+/* END Popover */
+
+.investment-plan__btn-area{
+  display:-webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: rem(68);
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.97;
+  letter-spacing: 2.3px;
+  text-align: left;
+}
+
+.investment-plan__btn-back{
+  color: $darkColor2;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.investment-plan__btn{
+  font-family:$fontMedium;
+  color: $variableGroupColor1;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+
+  &.btn-lrg{
+    span{
+      width: 370px;
+
+      &:before{
+        left: 280px;
+      }
+    }
+  }
+
+  span{
+    width: 150px;
+    position: relative;
+    cursor: pointer;
+
+
+    &:before{
+      content: '';
+      position: absolute;
+      background-image: url(/img/pfeil.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      display: block;
+      height: 14px;
+      width: 66px;
+      bottom: -8px;
+      left: 75px;
+    }
+  }
+
+}
+
+.investment-plan__currency{
+
+  input{
+    font-family:$fontRegular;
+    max-width: 372px;
+    width: 100%;
+    height: 37px;
+    border: 2px solid $darkColor2;
+    padding: 0 15px;
+    outline: none;
+
+    &.not-filled{
+      border-color: red;
+    }
+  }
+}
+
+.investment-plan__field-data{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 780px;
+}
+
+.investment-plan__input{
+  margin-right: 15px;
+  margin-bottom: 11px;
+  max-width: 177px;
+  width: 100%;
+
+  &.size1{
+    max-width: 294px;
+    width: 100%;
+  }
+
+  &.sms-verify{
+    max-width: 234px;
+    width: 100%;
+  }
+
+  &.bigger{
+    max-width: 274px;
+  }
+
+  &.big{
+    max-width: 369px;
+  }
+
+  &.full-size{
+    max-width: 755px;
+  }
+
+  .ant-input{
+    font-family:$fontRegular;
+    height: 37px;
+    border: 2px solid $darkColor2;
+    padding: 0 15px;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    transition: all .3s;
+
+    &:hover {
+      border-color: $variableGroupColor1;
+    }
+    &:focus{
+      border-color: $variableGroupColor1;
+    }
+    &.not-filled{
+      border-color: red;
+    }
+
+    &.disabled{
+      opacity: 0.7;
+      background-color: #e6e6e6;
+      border-color: #c7c7c6;
+      color: #c7c7c6;
+      box-shadow: 0 0 0 0 #c7c7c6;
+    }
+  }
+}
+
+.investment-plan__inputNumber{
+
+  .ant-input-number{
+    font-family:$fontRegular;
+    height: 37px;
+    border: 2px solid $darkColor2;
+    padding: 0 15px;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    min-width: 177px;
+    &:hover {
+      border-color: $variableGroupColor1;
+    }
+    &.not-filled{
+      border-color: red;
+    }
+  }
+  .ant-input-number-input{
+    text-align: center;
+  }
+  .ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+  .ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+    color: $variableGroupColor1;
+  }
+}
+
+.investment-plan__radio_info{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18px;
+
+  > div{
+    max-width: 177px;
+    width: 100%;
+    margin-right: 18px;
+
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.41;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: rgb(87, 87, 87);
+  }
+}
+
+
+/* THE Select */
+.ip-land{
+  > div{
+    max-height: 200px;
+  }
+  &.ant-select-dropdown{
+    font-family:$fontRegular;
+  }
+}
+
+.investment-plan__selects{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.investment-plan__selects_item{
+  width: 48%;
+  margin-right: 2%;
+
+  .ant-select{
+    margin: 10px 0;
+  }
+}
+.investment-plan__select {
+  max-width: 377px;
+  margin-right: 15px;
+  margin-bottom: 11px;
+
+  .ant-select{
+    font-family:$fontRegular;
+    font-size: inherit;
+  }
+
+  .not-filled{
+    .ant-select-selection{
+      border-color: red;
+    }
+  }
+
+  .ant-select-selection--single{
+    height: 37px;
+  }
+
+  .ant-select-selection__rendered {
+    line-height: 33px;
+  }
+
+  &.size1{
+    max-width: 112px;
+    width: 100%;
+  }
+
+  &.size2{
+    max-width: 177px;
+    width: 100%;
+  }
+
+  &.size3{
+    max-width: 371px;
+    width: 100%;
+  }
+
+  .ant-select-selection{
+    border: 2px solid $darkColor2;
+    border-radius: 0;
+
+    &:hover{
+      border-color: $variableGroupColor1;
+    }
+  }
+
+  .ant-select-focused .ant-select-selection,
+  .ant-select-selection:focus,
+  .ant-select-selection:active {
+    border-color: $variableGroupColor1;
+    outline: 0;
+    box-shadow: none;
+  }
+  .ant-select-open{
+    .ant-select-arrow{
+        transform: rotate(0deg);
+
+    }
+  }
+  .ant-select-arrow {
+    font-size: 30px;
+    width: 30px;
+    color: $variableGroupColor1;
+    top: 50%;
+    transform: none;
+    margin-top: -15px;
+    &:before {
+      transform: none;
+    }
+  }
+  .ant-select-selection__placeholder,
+  .ant-select-search__field__placeholder{
+    color: $darkColor2;
+  }
+}
+
+.investment-plan__option{
+  &.ant-select-dropdown-menu-item-active{
+    background-color: rgba(236, 101, 49, 0.2);
+  }
+  &.ant-select-dropdown-menu-item{
+    &:hover {
+      background-color: rgba(236, 101, 49, 0.2);
+    }
+  }
+}
+/* END Select */
+
+/* THE Radio buttons */
+.investment-plan__radio{
+
+  .investment-plan__radio_title{
+    margin-bottom: 10px;
+  }
+
+  .ant-radio-group{
+    display: flex;
+  }
+
+  .ant-radio-button-wrapper{
+    font-family:$fontRegular;
+    min-width: 177px;
+    height: 37px;
+    margin: 0 18px 18px 0;
+    border: 2px solid $darkColor2;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.4px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &:first-child {
+      border-radius: 0;
+      border-left: 2px solid $darkColor2;
+    }
+    &:last-child{
+      border-radius: 0;
+      margin-right: 0;
+    }
+    &:first-child:last-child {
+      border-radius: 0;
+    }
+    &:not(:first-child)::before {
+      left: 0;
+      width: 0;
+    }
+    &.ant-radio-button-wrapper-checked{
+      border-color: $variableGroupColor1;
+      color: $variableGroupColor1;
+      -webkit-box-shadow: 0 0 0 0 $variableGroupColor1;
+      box-shadow: 0 0 0 0 $variableGroupColor1;
+      &::before {
+        background-color: $variableGroupColor1;
+      }
+    }
+    &.ant-radio-button-wrapper-disabled{
+      border-color: $darkColor5;
+      color: $darkColor5;
+      -webkit-box-shadow: 0 0 0 0 $darkColor5;
+      box-shadow: 0 0 0 0 $darkColor5;
+      &::before {
+        background-color: $darkColor5;
+      }
+      &:hover{
+        color: $darkColor5;
+      }
+    }
+    &:hover, .ant-radio-button-wrapper-focused {
+      color: $variableGroupColor1;
+    }
+
+  }
+
+}
+
+/* THE STEP 7 */
+
+.knowledge__titles{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.knowledge__item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.knowledge__description{
+  width: 40%;
+  padding-right: 30px;
+}
+
+.knowledge__elements{
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+
+  .step7-sl-1{
+    width: 100%;
+    max-width: 188px;
+  }
+  .step7-sl-2{
+    width: 100%;
+    max-width: 108px;
+  }
+  .sub-name{
+    margin-right: 15px;
+    margin-bottom: 11px;
+    font-size:14px;
+    text-align: center;
+  }
+
+}
+
+/* END STEP 7 */
+/* THE STEP 8 */
+
+.overview__content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.overview__part{
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.overview__fee-structure{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.overview__fee-structure_item{
+  font-size:14px;
+  letter-spacing:1px;
+  line-height:24px;
+  margin-right: 20px;
+  word-break: break-all;
+
+  span {
+    font-family:$fontMedium;
+    font-size:20px;
+  }
+}
+
+.overview__risk{
+  margin-top: 20px;
+}
+
+.overview__risk_lvl{
+  display: flex;
+  align-items: baseline;
+  max-width: 220px;
+  margin-bottom: 10px;
+}
+
+.overview__risk_item{
+  font-family:$fontMedium;
+  font-size:rem(20);
+  letter-spacing:1px;
+  line-height:24px;
+  margin-right: 20px;
+
+  &.active{
+    font-size:rem(48);
+    color: $variableGroupColor1;
+  }
+}
+
+.overview__risk_status{
+  max-width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.spin__advanced_loader{
+  position: relative;
+  height: 100px;
+}
+
+.loader-title{
+  font-size: rem(38);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.26;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: $variableGroupColor1;
+}
+
+.loader-text {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: 0.9px;
+  text-align: center;
+}
+
+
+/* END STEP 8 */
+
+/* THE STEP 9 */
+
+.document-list{
+  margin: 25px 0;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.download-btns{
+  display: flex;
+  flex-wrap: wrap;
+  a{
+    border: 2px solid $darkColor2;
+    height: 36px;
+    max-width: 177px;
+    width: 100%;
+    text-decoration: none;
+    color: $darkColor2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    margin-bottom: 15px;
+
+    &:hover{
+      color: $variableGroupColor1;
+      border-color: $variableGroupColor1;
+    }
+  }
+}
+
+.terms-and-conditions{
+
+}
+
+.terms-and-conditions__item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+  button{
+    width: 65px;
+    height: 32px;
+    border: 2px solid $darkColor2;
+    color: $darkColor2;
+    text-decoration: none;
+    outline: none;
+    margin-right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active{
+      color: $variableGroupColor1;
+      border-color: $variableGroupColor1;
+    }
+  }
+  span{
+    flex: 1;
+  }
+}
+
+/* END STEP 9 */
+
+/* THE STEP 91 */
+.investment-plan__group{
+  .ip-btn-lrg{
+    font-family:$fontRegular;
+    height: 37px;
+    line-height: 13px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border: 2px solid $darkColor2;
+    background-color: transparent;
+    padding: 0 15px;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    max-width: 302px;
+    transition: all .3s;
+
+    &:hover {
+      border-color: $variableGroupColor1;
+      color: $variableGroupColor1;
+    }
+  }
+}
+/* END STEP 91 */
+
+/* END Radio buttons */
+
+
+@media (max-width: 1024px) {
+  .investment-plan__nav{
+    width: 90%;
+  }
+  .knowledge__description {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .knowledge__elements {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .investment-plan__content{
+    padding: rem(76) 20px rem(110);
+  }
+  .knowledge__elements {
+    .step7-sl-2 {
+      max-width: 188px;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .investment-plan__selects_item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .investment-plan__range {
+    li {
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+
+  .investment-plan__nav{
+    height: 100px;
+  }
+  .investment-plan__header{
+    .user-area{
+      height: 100px;
+
+      .anticon {
+        margin-top: 62px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .investment-plan__section {
+    min-height: calc(100vh - 180px);
+  }
+
+  .investment-plan__range {
+    right: 15px;
+    top: 45px;
+    li {
+      padding-left: 5px;
+
+      &.active{
+        padding-right: 15px;
+      }
+
+      span{
+        font-size: 24px;
+        padding-right: 0;
+      }
+    }
+  }
+  .investment-plan__radio {
+    .ant-radio-button-wrapper{
+      font-size:12px;
+    }
+  }
+  .ip-popover{
+    &.ant-popover{
+      left: 20px !important;
+    }
+  }
+  .investment-plan__order_item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .investment-plan__order_block{
+    width: 35%;
+  }
+  .investment-plan__order_text{
+    width: 55%;
+  }
+  .knowledge__elements {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .step7-sl-1 {
+      max-width: 48%;
+    }
+    .step7-sl-2 {
+      max-width: 48%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .investment-plan__section{
+    width: 100%;
+  }
+  //.investment-plan__nav{
+  //  width: 100%;
+  //}
+  .investment-plan__content{
+    .investment-plan__radio_item{
+      width: 100%;
+      margin-bottom: 18px;
+
+      .investment-plan__radio_info{
+        > div{
+          max-width: 100%;
+          margin-right: 0;
+          font-size:12px;
+        }
+      }
+    }
+
+    .step2-q2{
+      .ant-radio-group{
+        display: flex;
+        flex-wrap: wrap;
+
+        .ant-radio-button-wrapper {
+          min-width: inherit;
+        }
+      }
+    }
+
+    .step2-q3{
+      .ant-radio-group{
+        display: flex;
+        flex-wrap: wrap;
+
+        .ant-radio-button-wrapper {
+          width: 49%;
+          min-width: inherit;
+
+          &:first-child{
+            width: 100%;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .step3-q1{
+      .ant-radio-group{
+        display: flex;
+        flex-wrap: wrap;
+
+        .ant-radio-button-wrapper {
+          min-width: inherit;
+        }
+      }
+    }
+
+    .step3-q2{
+      .ant-radio-group{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .ant-radio-button-wrapper {
+          width: 48%;
+          min-width: inherit;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .step3-q3{
+      .ant-radio-group{
+        display: flex;
+        flex-wrap: wrap;
+
+        .ant-radio-button-wrapper {
+          width: 100%;
+          min-width: inherit;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .step3-q4{
+      .ant-radio-group{
+        display: flex;
+        flex-wrap: wrap;
+
+        .ant-radio-button-wrapper {
+          width: 100%;
+          min-width: inherit;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .investment-plan__currency {
+    input{
+      max-width: 100%;
+    }
+  }
+
+  .investment-plan__input {
+    .ant-input-number{
+      width: 48%;
+      min-width: inherit;
+    }
+  }
+
+  .investment-plan__radio{
+
+
+    .ant-radio-group{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .ant-radio-button-wrapper{
+        width: 48%;
+        margin-right: 0;
+        min-width: inherit;
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .investment-plan__client-type{
+    justify-content: space-between;
+
+    .client-type-btn{
+      min-width: 49%;
+      margin-right: 0;
+    }
+  }
+  .investment-plan__input{
+    margin-right: 0;
+    max-width: 100%;
+    &.bigger{
+      max-width: 100%;
+    }
+  }
+  .investment-plan__select {
+    margin-right: 0;
+    &.size2{
+      max-width: 100%;
+    }
+  }
+  .investment-plan__inner{
+    margin-right: 15px;
+  }
+  .investment-plan__range {
+    li{
+      &.active {
+        border-bottom: 3px solid $variableGroupColor1;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .overview__part {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .disclaimer-area__type {
+    a {
+      font-size: 16px;
+    }
+  }
+  .disclaimer-area__item{
+    &.cookies{
+      .checkbox-raden{
+        .ant-checkbox {
+          top: 4px;
+        }
+      }
+    }
+  }
+  .ip-popover{
+    &.ant-popover{
+      right: 20px;
+    }
+  }
+  .investment-plan__order_icon img {
+    max-height: 101px;
+  }
+  .investment-plan__order_block {
+    width: 100%;
+  }
+  .investment-plan__order_text {
+    width: 100%;
+  }
+  .investment-plan__input{
+    &.sms-verify {
+      max-width: 100%;
+    }
+  }
+  .knowledge__elements{
+    .step7-sl-1 {
+      max-width: inherit;
+    }
+    .step7-sl-2 {
+      max-width: inherit;
+    }
+  }
+
+  .investment-plan__btn-area{
+    font-size: 14px;
+    justify-content: flex-start;
+  }
+  .investment-plan__btn{
+    &.btn-lrg{
+      span{
+        &:before {
+          left: 240px;
+          width: 50px;
+        }
+      }
+    }
+  }
+}

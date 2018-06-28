@@ -1,0 +1,93 @@
+@import "../../../scss/_variables";
+
+.right-view-button-link:before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 3px;
+  height: 20px;
+  background-color: #ec6531;
+  -moz-transform: skewX(50deg);
+  -webkit-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+  -ms-transform: skewX(50deg);
+  transform: skewX(50deg);
+  top: 100%;
+}
+
+.hero-404__content{
+  position: relative;
+  z-index:1;
+}
+.parallax-line-404{
+  .react-parallax {
+    position: absolute !important;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .react-parallax-background-children {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.main-menu{
+  &.fixed{
+    + .hero-404-block{
+      .parallax-line-404 .react-parallax-background-children{
+        top: 160px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .hero-404-block{
+    padding-bottom: rem(215);
+    padding-top: rem(203);
+  }
+  .hero-404__content {
+    max-width: 434px;
+  }
+}
+
+@media (max-width: 768px){
+  .hero-404-block{
+    padding-top: rem(284);
+    padding-bottom: rem(433);
+  }
+  .hero-404__content {
+    max-width: rem(400);
+  }
+  .right-view-button-link {
+    padding: 14px 0 10px 0;
+    letter-spacing: 1.3px;
+  }
+}
+
+@media (max-width: 767px){
+  .right-view-button-link{
+    font-size:14px;
+  }
+}
+
+@media (max-width: 360px){
+  .hero-404-block{
+    padding-top: rem(190);
+    padding-bottom: rem(222);
+  }
+  .hero-404__content {
+    max-width: 205px;
+  }
+  .right-view-button-link{
+    font-size:14px;
+  }
+  .right-view-button{
+    max-width: 200px;
+  }
+}
+

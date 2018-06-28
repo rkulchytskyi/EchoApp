@@ -1,0 +1,78 @@
+@import "../../../scss/_variables";
+
+.hero-about__content {
+  position: relative;
+}
+
+.hero-about__inner {
+  padding: rem(202) 0 rem(64);
+  position: relative;
+  z-index: 1;
+  max-width: 538px;
+  width: 75%;
+}
+
+.hero-about__title {
+  font-family: $fontRegular;
+  font-size: rem(38);
+  line-height: 1.23;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: $orangeColor;
+  margin-bottom: rem(27);
+}
+
+.hero-about__text {
+  font-family: $fontMedium;
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  text-align: left;
+  color: $darkColor1;
+}
+
+.hero-about__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  background-image: url(/img/shutterstock_472454521.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 65%;
+}
+
+
+.about-area__content {
+  position: relative;
+  z-index: 1;
+  padding: rem(78) 0 rem(106);
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+
+  font-size:rem(16);
+  font-family:$fontRegular;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+
+  p{
+    margin-bottom: 20px;
+    a{
+      font-family:$fontBold;
+      color: $darkColor1;
+      text-decoration: none;
+    }
+  }
+}
+
+.about-area__background {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+}

@@ -1,0 +1,30 @@
+@import "../../../scss/_variables";
+
+.w-select{
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  width: 100%;
+  background-image: url("/img/pfeil-dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 96%;
+
+  option{
+    background-color: #000;
+  }
+}
+
+/* THE Subscribe */
+
+.subscription-response{
+  margin-bottom: 12px;
+
+  &.red-text{
+    color: red;
+  }
+  &.success-text{
+    color: $orangeColor;
+  }
+}
+/* END Subscribe */
